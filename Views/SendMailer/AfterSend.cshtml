@@ -1,0 +1,38 @@
+﻿@{
+    ViewData["Title"] = "AfterSend";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    var isSuccess = TempData["isSuccess"];
+}
+
+<h1>AfterSend</h1>
+    <p style="margin-top: 500px;">Thanks for the message!</p>
+
+@*    @if (isSuccess.Equals(null))
+{
+    <span>It is null</span>
+} 
+else{
+ if (isSuccess.ToString() == "True")
+{
+    <span>It is true</span>
+}  
+
+if (isSuccess.ToString() == "False")
+{
+    <span>It is false</span>
+}
+}*@
+@if((TempData["isSuccess"] == null))
+{
+    <script>
+        window.location.href = "/"
+        </script>
+}
+@if((TempData["isSuccess"]).ToString() == "False")
+{
+    <p>FALSE</p>
+}
+
+
+
+

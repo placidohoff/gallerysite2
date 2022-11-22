@@ -1,0 +1,165 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit http://go.microsoft.com/fwlink/?LinkID=397860
+*@
+
+@* <div class="row container-fluid">
+    <div class="col d-flex flex-column justify-content-start">
+    <div id="lg-row-1-col-1" class="mb-3">
+    <img src="https://picsum.photos/100/200" width='100%' style="background-size: cover;" />
+    </div>
+    <div id="lg-row-2-col-1" class="mb-3">
+    <img src="https://picsum.photos/300/200" width='100%' style="background-size: cover;" />
+    </div>
+    <div id="lg-row-3-col-1" class="mb-3">
+    <img src="https://picsum.photos/300/200" width='100%' style="background-size: cover;" />
+    </div>
+    <div id="lg-row-4-col-1" class="mb-3">
+    <img src="https://picsum.photos/200/200" width='100%' style="background-size: cover;" />
+    </div>
+    </div>
+    <div class="col d-flex flex-column justify-content-start">
+    <div id="lg-row-1-col-1" class="mb-3">
+    <img src="https://picsum.photos/200/200" width='100%' style="background-size: cover;" />
+    </div>
+    <div id="lg-row-2-col-1" class="mb-3">
+    <img src="https://picsum.photos/100/200" width='100%' style="background-size: cover;" />
+    </div>
+    <div id="lg-row-3-col-1" class="mb-3">
+    <img src="https://picsum.photos/300/200" width='100%' style="background-size: cover;" />
+    </div>
+    <div id="lg-row-4-col-1" class="mb-3">
+    <img src="https://picsum.photos/400/200" width='100%' style="background-size: cover;" />
+    </div>
+    </div>
+    <div class="col d-flex flex-column ">
+    <div id="lg-row-1-col-1" class="mb-3">
+    <img src="https://picsum.photos/300/200" width='100%' style="background-size: cover;" />
+    </div>
+    <div id="lg-row-2-col-1" class="mb-3">
+    <img src="https://picsum.photos/400/200" width='100%' style="background-size: cover;" />
+    </div>
+    <div id="lg-row-3-col-1" class="mb-3">
+    <img src="https://picsum.photos/100/200" width='100%' style="background-size: cover;" />
+    </div>
+    <div id="lg-row-4-col-1" class="mb-3">
+    <img src="https://picsum.photos/200/200" width='100%' style="background-size: cover;" />
+    </div>
+    </div>
+    <div class="col d-flex flex-column ">
+    <div id="lg-row-1-col-1" class="mb-3">
+    <img src="https://picsum.photos/200/200" width='100%' style="background-size: cover;" />
+    </div>
+    <div id="lg-row-2-col-1" class="mb-3">
+    <img src="https://picsum.photos/400/200" width='100%' style="background-size: cover;" />
+    </div>
+    <div id="lg-row-3-col-1" class="mb-3">
+    <img src="https://picsum.photos/200/200" width='100%' style="background-size: cover;" />
+    </div>
+    <div id="lg-row-4-col-1" class="mb-3">
+    <img src="https://picsum.photos/100/200" width='100%' style="background-size: cover;" />
+    </div>
+    </div>
+    </div> *@
+
+<div id="lightgallery" class="photo-grid" style="width: 100%;">
+
+    <div class="card" style="background-image:url('https://picsum.photos/300/200')">
+        &nbsp;
+    </div>
+    <div class="card" style="background-image:url('https://picsum.photos/300/200')">
+        &nbsp;
+    </div>
+    <div class="card card-tall" style="background-image:url('https://picsum.photos/300/200')">
+        &nbsp;
+    </div>
+    <div class="card" style="background-image:url('https://picsum.photos/300/200')">
+        &nbsp;
+    </div>
+    <div class="card" style="background-image:url('https://picsum.photos/300/200')">
+        &nbsp;
+    </div>
+    <div class="card" style="background-image:url('https://picsum.photos/300/200')">
+        &nbsp;
+    </div>
+    <div class="card" style="background-image:url('https://picsum.photos/300/200')">
+        &nbsp;
+    </div>
+    <div class="card" style="background-image:url('https://picsum.photos/300/200')">
+        &nbsp;
+    </div>
+    <div class="card card-tall" style="background-image:url('https://picsum.photos/300/200')">
+        &nbsp;
+    </div>
+    <div class="card" style="background-image:url('https://picsum.photos/300/200')">
+        &nbsp;
+    </div>
+    <div class="card card-wide" style="background-image:url('https://picsum.photos/300/200')">
+        &nbsp;
+    </div>
+    <div class="card" style="background-image:url('https://picsum.photos/300/200')">
+        &nbsp;
+    </div>
+</div>
+
+
+
+@* <script>
+    var img = document.createElement("IMG");
+    img.src = "https://picsum.photos/100/200";
+    img.style.width = '100%';
+    img.style.backgroundSize = 'cover';
+    img.classList.add("mb-3")
+    $('#lg-row-1-col-1').html(img);
+    </script> *@
+
+<style>
+    .photo-grid {
+        display: grid;
+        gap: 1rem;
+        /* grid-template-columns: repeat(12, 1fr); */
+        /* grid-template-columns: repeat(12, minmax(240px, 1fr)); */
+        /* grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); */
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        /* grid-template-columns: repeat(auto-fit, minmax(0, min(100%/2, max(64px, 100%/5)))); */
+        /* grid-auto-rows: 240px; */
+    }
+
+    .basic-grid {
+        display: grid;
+        gap: 1rem;
+        /* grid-template-columns: repeat(12, 1fr); */
+        /* grid-template-columns: repeat(12, minmax(240px, 1fr)); */
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    }
+
+    .card {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: #353535;
+        font-size: 3rem;
+        color: #fff;
+        height: 100%;
+        width: 100%;
+        border-radius: 4px;
+        transition: all 500ms;
+        overflow: hidden;
+
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .card-tall {
+        grid-row: span 2 / auto;
+    }
+
+    .card-wide {
+        grid-row: span 2 / auto;
+    }
+
+    .card:hover {
+        transform: translateY(-3px) scale(1.1);
+    }
+</style>
